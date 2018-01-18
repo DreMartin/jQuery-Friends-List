@@ -6,6 +6,10 @@ $(document).ready(function() {
         $('#friend-list').append(newElement);
         $('#input').val('');
     } )
+
+    $('#friend-list').on('click', 'li', function(e){
+        $(this).remove();
+    })
     
     
     function createFriend(name) {
